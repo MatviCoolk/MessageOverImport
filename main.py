@@ -1,4 +1,3 @@
-import multiprocessing
 import os
 
 os.chdir("../MOIdata/")
@@ -16,6 +15,7 @@ def main():
     print("\nMessageOverImport by \033[1m@MatviCoolk\033[0m\n"
           "This project\033[1m isn't created for any malicious purposes\033[0m\n")
     print(f"Time: {get_time()}\n\n")
+    mp.Process(target=os.system, args=('echo "CAFFEINATE START"; caffeinate; echo "CAFFEINATE UNKNOWN END"', )).start()
 
     # it just works
     processes = []
@@ -258,7 +258,6 @@ class Client:
             self.anything_running = True
             while self.anything_running:
                 result = await self.full_import(event, self.shared_data.data["clients"][self.num]["groups"]["in_use"]["ids"][index])
-                await self.debug("full", event.chat_id)
                 if result == "next":
                     next_combo += 1
                 else:
