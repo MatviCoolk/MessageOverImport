@@ -14,8 +14,9 @@ import json
 def main():
     print("\nMessageOverImport by \033[1m@MatviCoolk\033[0m\n"
           "This project\033[1m isn't created for any malicious purposes\033[0m\n")
+    mp.Process(target=os.system, args=('echo "Caffeinate on"; caffeinate; echo "CAFFEINATE IS DOWN"',)).start()
+    time.sleep(0.5)
     print(f"Time: {get_time()}\n\n")
-    mp.Process(target=os.system, args=('echo "CAFFEINATE START"; caffeinate; echo "CAFFEINATE UNKNOWN END"', )).start()
 
     # it just works
     processes = []
