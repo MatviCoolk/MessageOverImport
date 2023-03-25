@@ -1,0 +1,11 @@
+{
+    "clients": [
+        {
+            "session": "",
+            "phone": 0,
+            "password": "",
+            "app_id": 0,
+            "app_hash": ""
+        }
+    ]
+}
